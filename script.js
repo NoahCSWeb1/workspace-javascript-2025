@@ -14,7 +14,7 @@ $(function(){
     $('div.practice').hide();
     $('div.practice h1').each(function(){
         var content = $(this).text();
-        $('.panelLeft').append("<h1>"+content+"</h1");    
+        $('.panelLeft').append("<h1>"+content+"</h1>");    
     });
 
     $('.panelLeft h1').click(function(){
@@ -27,3 +27,8 @@ $(function(){
 
 
 
+
+
+    // show the first practice by default
+    $('div.practice').hide();
+    $('div.practice').eq(0).show();
